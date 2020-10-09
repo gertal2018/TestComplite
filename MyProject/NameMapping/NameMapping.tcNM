@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{A8993F61-BD07-4675-8D63-F8DB78613115}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="WINWORD" Key="{8CB64E4C-BAE8-422C-B95C-CBE180B709AF}">
+						<TypeInfo Item0="{9DE4A743-6980-4017-8752-5201A8514722}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="WINWORD" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="formWord" Key="{54E71398-BC9A-4209-B0F2-34365FABBCD6}">
+								<Image FileName="100068562" Left="0" Top="0" Right="1936" Bottom="1056" />
+								<TypeInfo Item0="{E478EE8B-C86E-4AE5-B1A2-6473604B6BDA}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Form" />
+									</Property>
+									<Property Name="Caption">
+										<Value Value="Word" />
+									</Property>
+									<Property Name="ObjectGroupIndex">
+										<Value Value="1" Type="0" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="FullpageUIHost" Key="{0C7280A0-1BE7-4684-9E67-C6854936BF24}">
+										<Image FileName="100068562" Left="8" Top="8" Right="1928" Bottom="1048" />
+										<TypeInfo Item0="{C4EED1D1-1076-4227-B60A-46C334542E93}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="FullpageUIHost" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="NetUIHWND" Key="{28A6211E-3F9C-4F53-B695-1D56DF50BD36}">
+												<Image FileName="100068562" Left="8" Top="8" Right="1928" Bottom="1048" />
+												<TypeInfo Item0="{C4EED1D1-1076-4227-B60A-46C334542E93}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="NetUIHWND" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="notepad" Key="{C777D7F9-F4C4-4232-BADB-9C60BDB64CEF}">
+						<TypeInfo Item0="{9DE4A743-6980-4017-8752-5201A8514722}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="notepad" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndNotepad" Key="{42507FE8-156F-4ADD-B451-FEB25F100077}">
+								<Image FileName="-585362134" Left="0" Top="0" Right="1440" Bottom="759" />
+								<TypeInfo Item0="{9ADADD7B-6799-41E7-A5A7-1DFCB42DE280}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Notepad" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="WINWORD" Owner="{8CB64E4C-BAE8-422C-B95C-CBE180B709AF}">
+			<Child Name="formWord" Owner="{54E71398-BC9A-4209-B0F2-34365FABBCD6}">
+				<Child Name="FullpageUIHost" Owner="{0C7280A0-1BE7-4684-9E67-C6854936BF24}">
+					<Child Name="NetUIHWND" Owner="{28A6211E-3F9C-4F53-B695-1D56DF50BD36}" />
+				</Child>
+			</Child>
+		</Child>
+		<Child Name="notepad" Owner="{C777D7F9-F4C4-4232-BADB-9C60BDB64CEF}">
+			<Child Name="wndNotepad" Owner="{42507FE8-156F-4ADD-B451-FEB25F100077}" />
+		</Child>
+	</LogicalNodes>
+</Root>

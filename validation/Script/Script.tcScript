@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Base">
+			<child name="BaseUI" key="{058EC7F9-300A-4665-95D7-56E7C2C2CAE9}" path="BaseUI.js" />
+		</folder>
+	</children>
+</Root>

@@ -1,0 +1,16 @@
+﻿function defineDictionary(strKeyValue)
+{
+  var dict = {
+  // Word name mapping
+  objWord : Aliases.WINWORD.formWord, 
+  key2 : "value2"
+  
+  }
+  return dict[strKeyValue];
+}
+
+function returnObject(stringObjectName)
+{
+  var myObject = defineDictionary(stringObjectName);
+  return myObject;
+}

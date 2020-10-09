@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{D4043CEC-976C-4F01-BEED-F3953393FEA0}">
+	<children>
+		<folder name="Regression Tests">
+			<child name="MyProject" key="{1D47C3EA-D896-40A7-8E8F-D5726CC52774}" path="MyProject\MyProject.mds" />
+		</folder>
+		<folder name="Framework">
+			<child name="validation" key="{28DA8804-47E4-46E2-9413-37D77F0473A0}" path="validation\validation.mds" />
+		</folder>
+	</children>
+	<testItems key="{7585051B-2370-4D99-A203-34905CC21F21}">
+		<children>
+			<testItem key="{28DA8804-47E4-46E2-9413-37D77F0473A0}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{1D47C3EA-D896-40A7-8E8F-D5726CC52774}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{1A32FB0E-691B-4540-9F2E-6197619E50FB}" />
+	<analysis key="{149F7404-7186-4711-8978-D8FEAAD20618}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="False" />
+	</extender>
+</Root>

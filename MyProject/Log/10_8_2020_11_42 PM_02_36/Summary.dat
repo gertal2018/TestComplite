@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="3219"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxAEEAQgAxADcANQAzADMALQAzAEMAMgAwAC0ANAAzADMAMwAtADgAQwA4ADQALQBGADYANQBFADkAQwBCADQAMwBGADAAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="Start Word"/>
+						<Prp name="starttime" type="D" value="44112.9875267014"/>
+						<Prp name="durationwithoutchildren" type="I" value="3219"/>
+					</Node>
+				</Node>
+				<Prp name="duration" type="I" value="3219"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="MyProject"/>
+				<Prp name="failedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44112.9875267014"/>
+			</Node>
+		</Node>
+		<Prp name="stop" type="D" value="44112.9875651157"/>
+		<Prp name="testname" type="S" value="MyProject: First Test\Start Word"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="44112.9875236806"/>
+		<Prp name="key" type="S" value="{69B88E29-6A4A-4E46-9479-220EAFD83A5B}"/>
+		<Prp name="tests" type="I" value="1"/>
+		<Prp name="name" type="S" value="validation"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="host" type="S" value="DESKTOP-JJIBAAS"/>
+		<Prp name="executionstatus" type="I" value="0"/>
+		<Prp name="user" type="S" value="Tester"/>
+	</Node>
+</Nodes>
