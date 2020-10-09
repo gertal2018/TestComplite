@@ -12,20 +12,33 @@
 			<testItem name="First Test" key="{BCD4A8A3-16B4-41E2-8014-8D250DABD272}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="Start Word" key="{1387C26C-F472-4DC9-AF52-9C6E6129223E}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}RunNotepadApplication" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Start Notepad++" key="{1387C26C-F472-4DC9-AF52-9C6E6129223E}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}RunNotepadApplication" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="Verify notepad is opened" key="{9DC0DDAC-FBBE-4842-932D-271ED619A1FF}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}VerifyElementExists" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Verify Notepad++ is opened" key="{9DC0DDAC-FBBE-4842-932D-271ED619A1FF}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}VerifyElementExists" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
-							<param0 name="strElementName" type="3" localVarName="" varType="8" value="notepadMainWindow" />
+							<param0 name="strElementName" type="3" localVarName="" varType="8" value="nppMainWindow" />
 							<param1 name="boolExists" type="3" localVarName="" varType="11" value="True" />
 						</testParameters>
 						<children />
 					</testItem>
 					<testItem name="Click notepad" key="{2FF59A75-F17F-490A-896B-A07B1EFB71BB}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
-							<param0 name="strElementName" type="3" localVarName="" varType="8" value="notepadMainWindow" />
+							<param0 name="strElementName" type="3" localVarName="" varType="8" value="nppMainWindow" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem1" key="{38FF1CA2-43AE-440A-AFC8-D140B9A9CF2D}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}selectTab" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strTabName" type="3" localVarName="" varType="8" value="new 1" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Create new file" key="{1699DA80-A1F1-43A0-961E-051533B4D76F}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}SelectChildMenuBar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="srtParentName" type="3" localVarName="" varType="8" value="File" />
+							<param1 name="strChildName" type="3" localVarName="" varType="8" value="New" />
 						</testParameters>
 						<children />
 					</testItem>
@@ -270,13 +283,13 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_MethodInvokeTimeout" type="2" value="3000" />
-		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="11" colIndex="1">
+		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="0" colIndex="0">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
 			</columns>
 			<data>
-				<row val0="False" val1="*" />
+				<row val0="True" val1="*" />
 				<row val0="True" val1="MsoCommandBar*" />
 				<row val0="True" val1="_Ww*" />
 				<row val0="True" val1="OpusApp" />
@@ -355,7 +368,7 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_Web_EnableSupportForWebComponents" type="1" value="True" />
-		<setting name="OpenApps_Web_ObjIdentification_DynamicIdentifiers" type="6" rowIndex="32" colIndex="9">
+		<setting name="OpenApps_Web_ObjIdentification_DynamicIdentifiers" type="6" rowIndex="32" colIndex="4">
 			<columns>
 				<column type="2" enabled="True" />
 				<column type="2" enabled="True" />
@@ -558,7 +571,7 @@
 		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="10000" />
 		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="50" />
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
-		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
 		<setting name="Playback_StopOnError" type="1" value="False" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />

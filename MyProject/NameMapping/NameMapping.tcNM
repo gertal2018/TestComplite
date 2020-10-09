@@ -78,6 +78,115 @@
 							</Child>
 						</Children>
 					</Child>
+					<Child Name="notepadPlusPlus" Key="{73E7FF04-1AC0-4E47-97DA-CB0038D2AF95}">
+						<TypeInfo Item0="{9DE4A743-6980-4017-8752-5201A8514722}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="notepad++" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="MainWindow" Key="{38631314-95D0-44D5-A1B4-0218ACFF978B}">
+								<Image FileName="1002909519" Left="0" Top="0" Right="1100" Bottom="700" />
+								<TypeInfo Item0="{9ADADD7B-6799-41E7-A5A7-1DFCB42DE280}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Notepad++" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="ReBarWindow32" Key="{69E20502-1805-4E8C-AFA8-1569D097D146}">
+										<Image FileName="1002909519" Left="0" Top="0" Right="0" Bottom="0" />
+										<TypeInfo Item0="{C4EED1D1-1076-4227-B60A-46C334542E93}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ReBarWindow32" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="2" Type="0" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="toolbar" Key="{71EA03B6-0949-4B06-A7B3-019FD42BAD2A}">
+												<Image FileName="1002909519" Left="8" Top="669" Right="608" Bottom="702" />
+												<TypeInfo Item0="{C4EED1D1-1076-4227-B60A-46C334542E93}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="#32770" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="ReBarWindow322" Key="{0842EFA7-5B38-4E1D-87DC-15E634724121}">
+										<Image FileName="1002909519" Left="8" Top="51" Right="1092" Bottom="76" />
+										<TypeInfo Item0="{C4EED1D1-1076-4227-B60A-46C334542E93}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ReBarWindow32" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="mainToolbar" Key="{51768356-78B4-42B5-8E15-65A6DEEEFC76}">
+												<Image FileName="1002909519" Left="10" Top="51" Right="1092" Bottom="76" />
+												<TypeInfo Item0="{292B8FC6-9A4C-436D-86B8-AA133207C623}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="ToolbarWindow32" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="MainTextBox" Key="{E5D1802F-5528-4DFD-BE21-C10656B17332}">
+										<Image FileName="-2015496378" Left="10" Top="102" Right="1090" Bottom="667" />
+										<TypeInfo Item0="{C4EED1D1-1076-4227-B60A-46C334542E93}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Scintilla" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="N" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="TabList" Key="{7B06CD77-C473-4009-BC5B-B9B1A63B7CCB}">
+										<Image FileName="1935034382" Left="8" Top="76" Right="1336" Bottom="726" />
+										<TypeInfo Item0="{B1C16B47-AFD7-4646-947D-50499E039DEA}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="TabList" />
+											</Property>
+											<Property Name="Caption">
+												<Value Value="Tab" />
+											</Property>
+											<Property Name="ObjectGroupIndex">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="mainMenubar" Key="{8C87F983-DBDB-4A51-894E-9EB31B0FCB14}">
+										<Image FileName="-1340295101" Left="8" Top="31" Right="1928" Bottom="50" />
+										<TypeInfo Item0="{6E75B117-E536-4CDD-8C2E-6ED54F6665A0}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="MenuBar" />
+											</Property>
+											<Property Name="Caption">
+												<Value Value="Application" />
+											</Property>
+											<Property Name="ObjectGroupIndex">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
 				</Children>
 			</Child>
 		</Children>
@@ -92,6 +201,15 @@
 		</Child>
 		<Child Name="notepad" Owner="{C777D7F9-F4C4-4232-BADB-9C60BDB64CEF}">
 			<Child Name="wndNotepad" Owner="{42507FE8-156F-4ADD-B451-FEB25F100077}" />
+		</Child>
+		<Child Name="notepadPlusPlus" Owner="{73E7FF04-1AC0-4E47-97DA-CB0038D2AF95}">
+			<Child Name="MainWindow" Owner="{38631314-95D0-44D5-A1B4-0218ACFF978B}">
+				<Child Name="toolbar" Owner="{71EA03B6-0949-4B06-A7B3-019FD42BAD2A}" />
+				<Child Name="mainToolbar" Owner="{51768356-78B4-42B5-8E15-65A6DEEEFC76}" />
+				<Child Name="MainTextBox" Owner="{E5D1802F-5528-4DFD-BE21-C10656B17332}" />
+				<Child Name="TabList" Owner="{7B06CD77-C473-4009-BC5B-B9B1A63B7CCB}" />
+				<Child Name="mainMenubar" Owner="{8C87F983-DBDB-4A51-894E-9EB31B0FCB14}" />
+			</Child>
 		</Child>
 	</LogicalNodes>
 </Root>

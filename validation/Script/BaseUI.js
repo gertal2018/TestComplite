@@ -58,3 +58,16 @@ function ClickElement(strElementName)
    
   }
 }
+
+function ClickObject(objectName)
+{
+    if(objectName.WaitProperty("Enabled", true, 5000))
+    {
+      Log.Checkpoint("Clicking on element " + objectName.Name)
+      objectName.Click();
+    }
+    else
+    {
+      Log.Error("Element " + objectName + " is not clickable.")
+    }
+}
