@@ -44,6 +44,61 @@
 					</testItem>
 				</children>
 			</testItem>
+			<testItem name="Polovni Automobili" key="{2639709B-63E1-4CBD-8F7A-905F1388DCF6}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="Open Polovni Automobili website" key="{218DDC2B-4232-4388-AB31-390CF9ACB9A4}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}openBrowser" count="1" timeout="0" stopOnError="0" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strURL" type="3" localVarName="" varType="8" value="https://www.polovniautomobili.com/" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Wait for page to load" key="{C940DE19-A44D-4774-9A5D-7826BF52B5C2}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}waitForPageToLoad" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Click Detaljna Pretraga button" key="{3B39A325-B56C-435D-BECA-203C70303881}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}ClickDetaljnaPretragaButton" count="1" timeout="0" stopOnError="0" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Wait for page to load" key="{38C97CA4-9948-4190-8557-EBA41B0649BF}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}waitForPageToLoad" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Enter max price value" key="{A8193914-349C-4272-9430-2C2767DC45C2}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}enterValueToCenaDo" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strValue" type="3" localVarName="" varType="8" value="5500" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Select Option from Karoserija dropdown" key="{85E400B7-0F56-464E-8C11-A2FADC1A98CE}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}SelectKaroserija" count="1" timeout="0" stopOnError="0" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strOptions" type="3" localVarName="" varType="8" value="Hečbek" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Select Option from Menjac dropdown" key="{D63CBE61-A6D9-453A-AFBF-229A352AFBC4}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}SelectMenjac" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strOptions" type="3" localVarName="" varType="8" value="Poluautomatski,Automatski" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Click Pretraga button" key="{8F970971-D206-42D5-9F08-78006DF1AAB7}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}ClickPretragaButton" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Wait for page to load" key="{118E977D-25C9-4C51-8FB6-01AC062F7705}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}waitForPageToLoad" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Open links in new tab" key="{E6DAFA13-8B5E-4C4B-BDEB-0F4E596217E1}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}OpenCarInNewTab" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strKola" type="3" localVarName="" varType="8" value="Toyota,Nissan,Honda,Mazda" />
+						</testParameters>
+						<children />
+					</testItem>
+				</children>
+			</testItem>
 		</children>
 	</testItems>
 	<variables key="{CE077F17-D703-4F3E-BE05-D098FF4E583E}" />
