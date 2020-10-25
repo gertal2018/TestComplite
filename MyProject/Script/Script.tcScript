@@ -5,5 +5,11 @@
 			<child name="BaseUI" key="{FF630D00-0445-43C1-9306-A88E3DCD26FB}" path="..\..\validation\Script\BaseUI.js" />
 			<child name="Repository" key="{F141CF70-9BA5-4002-BA51-0248B39B64E3}" path="Repository.js" />
 		</folder>
+		<folder name="NotepadPlusPLus">
+			<child name="nppMain" key="{38803851-9624-4652-B162-1FFFAD91FDE3}" path="nppMain.js" />
+		</folder>
+		<folder name="PolovniAutomobili">
+			<child name="PAMain" key="{5EE4DA10-1209-4057-A238-A8B58B20151B}" path="PAMain.js" />
+		</folder>
 	</children>
 </Root>
