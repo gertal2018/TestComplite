@@ -49,7 +49,7 @@
 				<children>
 					<testItem name="Open Polovni Automobili website" key="{218DDC2B-4232-4388-AB31-390CF9ACB9A4}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}openBrowser" count="1" timeout="0" stopOnError="0" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
-							<param0 name="strURL" type="3" localVarName="" varType="8" value="https://www.polovniautomobili.com/" />
+							<param0 name="strURL" type="3" localVarName="" varType="8" value="https://www.polovniautomobili.com" />
 						</testParameters>
 						<children />
 					</testItem>
@@ -91,6 +91,16 @@
 						<testParameters />
 						<children />
 					</testItem>
+					<testItem name="Select option from sortiraj dropdown" key="{1D4FA87D-1A2B-45F9-877A-30B0998C8357}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}SelectSortiraj" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="strOptions" type="3" localVarName="" varType="8" value="datumu objave silazno" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Wait for page to load" key="{47212C66-EE4E-48BB-AF94-A4B593B9E051}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}waitForPageToLoad" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
 					<testItem name="Open links in new tab" key="{E6DAFA13-8B5E-4C4B-BDEB-0F4E596217E1}" group="False" enabled="True" testMoniker="{5EE4DA10-1209-4057-A238-A8B58B20151B}OpenCarInNewTab" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
 							<param0 name="strKola" type="3" localVarName="" varType="8" value="Toyota,Nissan,Honda,Mazda" />
@@ -103,7 +113,7 @@
 	</testItems>
 	<variables key="{CE077F17-D703-4F3E-BE05-D098FF4E583E}" />
 	<settings key="{E31B6955-9E51-4634-9A61-36BFC16A5748}">
-		<settingsVersion value="14.61" />
+		<settingsVersion value="14.70" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>

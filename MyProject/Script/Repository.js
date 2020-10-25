@@ -26,6 +26,8 @@
   karoserijaDropdown : "//span[@class='placeholder' and .=' Karoserija']",
   menjacDropdown : "//span[@class='placeholder' and .=' Menjač']",
   cenaDo : "//input[@id='price_to']",
+  sortirajDropdown : Aliases.Chrome.pagePretragaAutomobilaPolovniAut.sortirajDropdown,
+  sortirajDropdownOption : Aliases.Chrome.pagePretragaAutomobilaPolovniAut.sortirajDropdownList,
   
   // rezultati
   sledecaStranicaButton : "//a[@title='Sledeća stranica']"

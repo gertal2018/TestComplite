@@ -308,6 +308,108 @@
 											</Selector>
 										</Selectors>
 									</Child>
+									<Child Name="panelSearchResults" Key="{E0288077-3051-4CB0-A392-BAF532E0F040}" ExtendedFind="True">
+										<Image FileName="830892789" Left="170" Top="546" Right="884" Bottom="6466" />
+										<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Panel" />
+											</Property>
+											<Property Name="idStr">
+												<Value Value="search-results" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="panel" Key="{24C2DCC6-2608-40C3-B47F-84E604A1214D}">
+												<Image FileName="-154391503" Left="170" Top="-2795" Right="884" Bottom="3230" />
+												<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Panel" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="panel" Key="{ACBACF0B-81C2-47EE-91C0-151E5C81516A}">
+														<Image FileName="1163959561" Left="160" Top="-2759" Right="884" Bottom="-2718" />
+														<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
+														<Properties>
+															<Property Name="ObjectType">
+																<Value Value="Panel" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value Value="0" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="label" Key="{6D33D7EA-C411-4B8C-83E0-1941E0C4B27F}" ExtendedFind="True">
+																<Image FileName="956144699" Left="522" Top="81" Right="884" Bottom="115" />
+																<TypeInfo Item0="{99CCD62C-5577-4751-9B96-0ED0533FF6A1}" />
+																<Properties>
+																	<Property Name="ObjectType">
+																		<Value Value="Label" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="panel" Key="{EB34FB5E-924C-4906-93AD-D18EC393907B}" ExtendedFind="True">
+																		<Image FileName="790087103" Left="643" Top="81" Right="884" Bottom="115" />
+																		<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
+																		<Properties>
+																			<Property Name="ObjectType">
+																				<Value Value="Panel" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value Value="1" Type="0" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="panel" Key="{0B420059-A1DB-4B27-843A-3377DE4C3776}">
+																				<Image FileName="1334839072" Left="653" Top="81" Right="884" Bottom="111" />
+																				<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
+																				<Properties>
+																					<Property Name="ObjectType">
+																						<Value Value="Panel" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="sortirajDropdownList" Key="{D60D3891-CA5D-4DDC-A74A-43644FBF75F7}">
+																						<Image FileName="790087103" Left="653" Top="116" Right="884" Bottom="368" />
+																						<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
+																						<Properties>
+																							<Property Name="ObjectType">
+																								<Value Value="Panel" />
+																							</Property>
+																							<Property Name="contentText">
+																								<Value Value="4F0073006E006F0076006E006F000A00630065006E006900200075007A006C0061007A006E006F000A00630065006E0069002000730069006C0061007A006E006F000A0067006F00640069006E0069002000700072006F0069007A0076006F0064006E006A006500200075007A006C0061007A006E006F000A0067006F00640069006E0069002000700072006F0069007A0076006F0064006E006A0065002000730069006C0061007A006E006F000A006B0069006C006F006D0065007400720061007E016900200075007A006C0061007A006E006F000A006B0069006C006F006D0065007400720061007E0169002000730069006C0061007A006E006F000A006E00610073006C006F0076007500200075007A006C0061007A006E006F000A006E00610073006C006F00760075002000730069006C0061007A006E006F000A0064006100740075006D00750020006F0062006A006100760065002000730069006C0061007A006E006F000A0064006100740075006D00750020006F0062006A00610076006500200075007A006C0061007A006E006F00" Type="7" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="sortirajDropdown" Key="{53AD91F2-B03F-4CC7-BA84-96A102040002}" ExtendedFind="True">
+																						<Image FileName="-1625755020" Left="931" Top="478" Right="1160" Bottom="506" />
+																						<TypeInfo Item0="{99CCD62C-5577-4751-9B96-0ED0533FF6A1}" />
+																						<Properties>
+																							<Property Name="ObjectType">
+																								<Value Value="TextNode" />
+																							</Property>
+																							<Property Name="contentText">
+																								<Value Value="ceni uzlazno" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
 								</Children>
 							</Child>
 						</Children>
@@ -344,6 +446,8 @@
 				<Child Name="form" Owner="{DD319F93-2525-4825-8B5A-CAA3F0C8A5ED}">
 					<Child Name="textnode" Owner="{2D72D0F1-8643-4D98-AC04-19A8BC252CA2}" />
 				</Child>
+				<Child Name="sortirajDropdownList" Owner="{D60D3891-CA5D-4DDC-A74A-43644FBF75F7}" />
+				<Child Name="sortirajDropdown" Owner="{53AD91F2-B03F-4CC7-BA84-96A102040002}" />
 			</Child>
 		</Child>
 	</LogicalNodes>
