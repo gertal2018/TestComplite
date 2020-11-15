@@ -105,13 +105,12 @@ function ClickNextPageButtonIfExists()
 // This function will open any link that contains searched value in new tab
 function OpenCarInNewTab(strKola)
 {
-  var page = browser.Page(polovniAutomobiliPage);
-  
   var prevSep = aqString.ListSeparator;
   aqString.ListSeparator = ",";
   
   do
   {
+    var page = browser.Page(polovniAutomobiliPage);
     var listOfLinks = page.EvaluateXPath("//a[@class='ga-title']", true);
     var numberOfLinks = listOfLinks.length;
     for(var i = 0; i < numberOfLinks ; i++)
