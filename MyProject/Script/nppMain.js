@@ -60,3 +60,12 @@ function SelectChildMenuBar(srtParentName, strChildName)
   if(itemFound == false)
     Log.Error(strChildName + " is not present under " + srtParentName);
 }
+
+// Parameter 1: stringColumnName: define a column name from variable table
+function enterTextIntoNotepadPLusPLus(boolDataDriven, stringColumnName, stringVariableTable)
+{
+  if(boolDataDriven)
+    EnterTextToObject("dict", "nppMainTextBox", ReturnVariableValue(stringColumnName, stringVariableTable));
+  else
+    EnterTextToObject("dict", "nppMainTextBox", stringVariableTable);
+}

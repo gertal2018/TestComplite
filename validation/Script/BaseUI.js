@@ -115,7 +115,7 @@ DDT.CloseDriver(Driver.Name);
 
 function DataDriven()
 {
-  Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration;
+  Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration - 1;
 }
 
 function driver(stringPath, stringFileName)
@@ -124,18 +124,42 @@ function driver(stringPath, stringFileName)
   DDT.CurrentDriver.DriveMethod("BaseUI.caller");  
 }
 
-function caller()
+// Parameter 1: stringColumnName: define a column name from variable table
+// Parameter 2: variableTable: define a variable table
+function ReturnVariableValue(stringColumnName, variableTable)
+{
+  var numberOfIterations = Project.Variables.DataDrivenCounter;
+  var numberOfRows = variableTable.RowCount;
+  if(numberOfIterations + 1 > numberOfRows)
+    Log.Error("Number of iterations: " + numberOfIterations + 1 + " is larger that rows in variable table: " + numberOfRows);
+  else
+  {
+    var numberOfColumns = variableTable.ColumnCount;
+  
+    for(var i = 0; i < numberOfColumns; i++)
+    {
+      var currentColumnName = Project.Variables.DataDriven1.ColumnName(i);
+      if(aqString.Compare(stringColumnName, currentColumnName, true) == 0)
+      {
+        var CellValue = Project.Variables.DataDriven1.Item(i,numberOfIterations);
+        return CellValue;
+      }
+    }
+  }
+}
+
+function ReturnExcelValue(stringFilePath, stringSheetName)
 {
   var hello = Project.Variables.DataDrivenCounter;
-  var Driver = DDT.ExcelDriver("C:\\test.xls", "Sheet1");
+  var Driver = DDT.ExcelDriver(stringFilePath, stringSheetName);
       while (!Driver.EOF())
       {
         var hello = Driver.ColumnName(0);
-        var world = Driver.Value(1);
+        var world = Driver.Value(Project.Variables.DataDrivenCounter);
         Driver.Next();
         if(world == null){} 
         else
-          objectName.Keys(world+"[Enter]");
+          return world;
       }
 
       DDT.CloseDriver(Driver.Name); 
