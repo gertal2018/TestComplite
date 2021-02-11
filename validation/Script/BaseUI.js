@@ -12,10 +12,10 @@ function RunNotepadApplication()
   TestedApps.notepad.Run();
 }
 
-function VerifyElementExists(strElementName, boolExists)
+function VerifyElementExists(strDictinary, strElementName, boolExists)
 {
-  var objElement = Repository.returnObject(strElementName);
-  var boolObjectFound = undefined;
+  var objElement = Repository.returnObject(strDictinary, strElementName);
+  var boolObjectFound = false;
   
   if(objElement.WaitProperty("Exists", true, 5000))
       boolObjectFound = true;
@@ -40,11 +40,11 @@ function VerifyElementExists(strElementName, boolExists)
   return boolObjectFound;
 }
 
-function ClickElement(strElementName)
+function ClickElement(strDict, strElementName)
 {
-  if(VerifyElementExists(strElementName, true))
+  if(VerifyElementExists(strDict, strElementName, true))
   {
-    var myElement = Repository.returnObject(strElementName);
+    var myElement = Repository.returnObject(strDict, strElementName);
     
     if(myElement.WaitProperty("Enabled", true, 5000))
     {
@@ -79,22 +79,64 @@ function ClickObject(objectName)
   }
 }
 
-function EnterTextToObject(objectName, strValue)
+function EnterTextToObject(strDictionary, objectName, strValue)
 {
+  var objectName = Repository.returnObject(strDictionary, objectName);
   if(objectName.WaitProperty("Exists", true, 10000))
   {
     if(objectName.WaitProperty("Enabled", true, 5000))
     {
-      Log.Checkpoint("Entering '" + strValue + "' to " + objectName)
+      Log.Checkpoint("Entering '" + strValue + "' to " + objectName);
       objectName.Keys(strValue);
     }
     else
     {
-      Log.Error("Element " + objectName + " is not enabled.")
+      Log.Error("Element " + objectName + " is not enabled.");
     }
   }
   else
   {
-    Log.Error("Eleemnt " + objectName + " does not exist")
+    Log.Error("Eleemnt " + objectName + " does not exist");
   }
+}
+
+function testinfExcel()
+{
+  var Driver = DDT.ExcelDriver("C:\\test.xls", "Sheet1");
+  while (!Driver.EOF())
+{
+  var hello = Driver.ColumnName(0);
+  var world = Driver.Value(0);
+  Driver.Next();
+}
+
+DDT.CloseDriver(Driver.Name); 
+}
+
+function DataDriven()
+{
+  Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration;
+}
+
+function driver(stringPath, stringFileName)
+{
+  DDT.ExcelDriver(stringPath, stringFileName);
+  DDT.CurrentDriver.DriveMethod("BaseUI.caller");  
+}
+
+function caller()
+{
+  var hello = Project.Variables.DataDrivenCounter;
+  var Driver = DDT.ExcelDriver("C:\\test.xls", "Sheet1");
+      while (!Driver.EOF())
+      {
+        var hello = Driver.ColumnName(0);
+        var world = Driver.Value(1);
+        Driver.Next();
+        if(world == null){} 
+        else
+          objectName.Keys(world+"[Enter]");
+      }
+
+      DDT.CloseDriver(Driver.Name); 
 }

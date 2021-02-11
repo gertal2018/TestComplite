@@ -182,13 +182,29 @@
 												<Value Value="1" Type="0" />
 											</Property>
 										</Properties>
+										<Children>
+											<Child Name="menuitemView" Key="{4DAC788D-16E3-42F7-BD2E-B100A986DCEE}">
+												<Image FileName="1629547191" Left="115" Top="23" Right="154" Bottom="42" />
+												<TypeInfo Item0="{5B0888DC-D78E-4C61-80CC-712D7596C67F}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="MenuItem" />
+													</Property>
+													<Property Name="Caption">
+														<Value Value="View" />
+													</Property>
+													<Property Name="ObjectGroupIndex">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
 									</Child>
 								</Children>
 							</Child>
 						</Children>
 					</Child>
 					<Child Name="Chrome" Key="{49BE2F43-7658-4275-9001-5A4695D56F0E}">
-						<TypeInfo Item0="{93FBD12B-161B-4C86-AE57-40E96C9C8BE5}" />
 						<Properties>
 							<Property Name="ObjectType">
 								<Value Value="Browser" />
@@ -196,8 +212,6 @@
 						</Properties>
 						<Children>
 							<Child Name="pagePolovniAutomobili" Key="{7B28A60C-AC27-4364-937E-87D9CFFB9610}">
-								<Image FileName="1924385704" Left="8" Top="79" Right="1928" Bottom="1048" />
-								<TypeInfo Item0="{CEC94819-80A6-4C2C-9BD3-A6F790361E60}" />
 								<Properties>
 									<Property Name="ObjectType">
 										<Value Value="Page" />
@@ -208,8 +222,6 @@
 								</Properties>
 								<Children>
 									<Child Name="formUkFormJsUkForm" Key="{5DF28B81-3732-497C-A0A4-72EC447F1DB1}" ExtendedFind="True">
-										<Image FileName="-2132617272" Left="456" Top="577" Right="1154" Bottom="772" />
-										<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 										<Properties>
 											<Property Name="ObjectType">
 												<Value Value="Form" />
@@ -220,8 +232,6 @@
 										</Properties>
 										<Children>
 											<Child Name="panelUkWidthMedium13UkWidth1" Key="{E964BE66-D74F-4AEC-9337-E9DB7634F5F7}" ExtendedFind="True">
-												<Image FileName="-916404851" Left="918" Top="727" Right="1154" Bottom="772" />
-												<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 												<Properties>
 													<Property Name="ObjectType">
 														<Value Value="Panel" />
@@ -232,8 +242,6 @@
 												</Properties>
 												<Children>
 													<Child Name="panelUkWidth11" Key="{0DAC4E5F-1290-4EB7-9C5A-B23CEBFA08EF}" ExtendedFind="True">
-														<Image FileName="-916404851" Left="928" Top="727" Right="1154" Bottom="772" />
-														<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 														<Properties>
 															<Property Name="ObjectType">
 																<Value Value="Panel" />
@@ -241,8 +249,6 @@
 														</Properties>
 														<Children>
 															<Child Name="buttonDetaljnaPretraga" Key="{6531BD16-C9B3-49A3-A959-8726AD04737B}">
-																<Image FileName="-407030486" Left="928" Top="727" Right="1154" Bottom="767" />
-																<TypeInfo Item0="{DF8F1D3E-B852-478E-B071-E842A6405BB9}" />
 																<Properties>
 																	<Property Name="ObjectType">
 																		<Value Value="Button" />
@@ -261,8 +267,6 @@
 								</Children>
 							</Child>
 							<Child Name="pagePretragaAutomobilaPolovniAut" Key="{53742441-0ABE-47FA-B226-23916A87F041}">
-								<Image FileName="991615754" Left="8" Top="79" Right="1373" Bottom="1048" />
-								<TypeInfo Item0="{CEC94819-80A6-4C2C-9BD3-A6F790361E60}" />
 								<Properties>
 									<Property Name="ObjectType">
 										<Value Value="Page" />
@@ -273,8 +277,6 @@
 								</Properties>
 								<Children>
 									<Child Name="form" Key="{DD319F93-2525-4825-8B5A-CAA3F0C8A5ED}">
-										<Image FileName="991615754" Left="170" Top="284" Right="1194" Bottom="2085" />
-										<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 										<Selectors>
 											<Selector>
 												<Value Value=".uk-form" />
@@ -291,8 +293,6 @@
 										</Selectors>
 									</Child>
 									<Child Name="textnode" Key="{2D72D0F1-8643-4D98-AC04-19A8BC252CA2}">
-										<Image FileName="991615754" Left="688" Top="334" Right="909" Bottom="362" />
-										<TypeInfo Item0="{99CCD62C-5577-4751-9B96-0ED0533FF6A1}" />
 										<Selectors>
 											<Selector>
 												<Value Value="//span[contains(text(), &apos;Karoserija&apos;)]" />
@@ -309,8 +309,6 @@
 										</Selectors>
 									</Child>
 									<Child Name="panelSearchResults" Key="{E0288077-3051-4CB0-A392-BAF532E0F040}" ExtendedFind="True">
-										<Image FileName="830892789" Left="170" Top="546" Right="884" Bottom="6466" />
-										<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 										<Properties>
 											<Property Name="ObjectType">
 												<Value Value="Panel" />
@@ -321,8 +319,6 @@
 										</Properties>
 										<Children>
 											<Child Name="panel" Key="{24C2DCC6-2608-40C3-B47F-84E604A1214D}">
-												<Image FileName="-154391503" Left="170" Top="-2795" Right="884" Bottom="3230" />
-												<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 												<Properties>
 													<Property Name="ObjectType">
 														<Value Value="Panel" />
@@ -333,8 +329,6 @@
 												</Properties>
 												<Children>
 													<Child Name="panel" Key="{ACBACF0B-81C2-47EE-91C0-151E5C81516A}">
-														<Image FileName="1163959561" Left="160" Top="-2759" Right="884" Bottom="-2718" />
-														<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 														<Properties>
 															<Property Name="ObjectType">
 																<Value Value="Panel" />
@@ -345,8 +339,6 @@
 														</Properties>
 														<Children>
 															<Child Name="label" Key="{6D33D7EA-C411-4B8C-83E0-1941E0C4B27F}" ExtendedFind="True">
-																<Image FileName="956144699" Left="522" Top="81" Right="884" Bottom="115" />
-																<TypeInfo Item0="{99CCD62C-5577-4751-9B96-0ED0533FF6A1}" />
 																<Properties>
 																	<Property Name="ObjectType">
 																		<Value Value="Label" />
@@ -354,8 +346,6 @@
 																</Properties>
 																<Children>
 																	<Child Name="panel" Key="{EB34FB5E-924C-4906-93AD-D18EC393907B}" ExtendedFind="True">
-																		<Image FileName="790087103" Left="643" Top="81" Right="884" Bottom="115" />
-																		<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 																		<Properties>
 																			<Property Name="ObjectType">
 																				<Value Value="Panel" />
@@ -366,8 +356,6 @@
 																		</Properties>
 																		<Children>
 																			<Child Name="panel" Key="{0B420059-A1DB-4B27-843A-3377DE4C3776}">
-																				<Image FileName="1334839072" Left="653" Top="81" Right="884" Bottom="111" />
-																				<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 																				<Properties>
 																					<Property Name="ObjectType">
 																						<Value Value="Panel" />
@@ -375,8 +363,6 @@
 																				</Properties>
 																				<Children>
 																					<Child Name="sortirajDropdownList" Key="{D60D3891-CA5D-4DDC-A74A-43644FBF75F7}">
-																						<Image FileName="790087103" Left="653" Top="116" Right="884" Bottom="368" />
-																						<TypeInfo Item0="{0597D962-AB6E-4529-A875-9180C80A135C}" />
 																						<Properties>
 																							<Property Name="ObjectType">
 																								<Value Value="Panel" />
@@ -387,8 +373,6 @@
 																						</Properties>
 																					</Child>
 																					<Child Name="sortirajDropdown" Key="{53AD91F2-B03F-4CC7-BA84-96A102040002}" ExtendedFind="True">
-																						<Image FileName="-1625755020" Left="931" Top="478" Right="1160" Bottom="506" />
-																						<TypeInfo Item0="{99CCD62C-5577-4751-9B96-0ED0533FF6A1}" />
 																						<Properties>
 																							<Property Name="ObjectType">
 																								<Value Value="TextNode" />
@@ -435,7 +419,9 @@
 				<Child Name="mainToolbar" Owner="{51768356-78B4-42B5-8E15-65A6DEEEFC76}" />
 				<Child Name="MainTextBox" Owner="{E5D1802F-5528-4DFD-BE21-C10656B17332}" />
 				<Child Name="TabList" Owner="{7B06CD77-C473-4009-BC5B-B9B1A63B7CCB}" />
-				<Child Name="mainMenubar" Owner="{8C87F983-DBDB-4A51-894E-9EB31B0FCB14}" />
+				<Child Name="mainMenubar" Owner="{8C87F983-DBDB-4A51-894E-9EB31B0FCB14}">
+					<Child Name="menuitemView" Owner="{4DAC788D-16E3-42F7-BD2E-B100A986DCEE}" />
+				</Child>
 			</Child>
 		</Child>
 		<Child Name="Chrome" Owner="{49BE2F43-7658-4275-9001-5A4695D56F0E}">

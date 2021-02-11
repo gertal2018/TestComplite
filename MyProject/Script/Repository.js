@@ -39,8 +39,8 @@
     return dict[strKeyValue];
 }
 
-function returnObject(stringObjectName)
+function returnObject(stringDictionary, stringObjectName)
 {
-  var myObject = defineDictionary(stringObjectName);
+  var myObject = defineDictionary(stringDictionary, stringObjectName);
   return myObject;
 }

@@ -9,7 +9,7 @@ function RunNotepadApplication()
 
 function selectTab(strTabName)
 {
-  var tabList = Repository.returnObject("nppTabList");
+  var tabList = Repository.returnObject("dict", "nppTabList");
   var numberOfTabs =  tabList.ChildCount;
   var boolTabFound = false;
  
@@ -35,7 +35,7 @@ function selectTab(strTabName)
 
 function SelectChildMenuBar(srtParentName, strChildName)
 {
-  var MainMenuBar = Repository.returnObject("nppMainMenuBar");
+  var MainMenuBar = Repository.returnObject("dict", "nppMainMenuBar");
   var ObjectParent = MainMenuBar.MenuItem(srtParentName);
   
   BaseUI.ClickObject(ObjectParent);
