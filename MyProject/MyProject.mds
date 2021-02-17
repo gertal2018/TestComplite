@@ -47,6 +47,14 @@
 								</testParameters>
 								<children />
 							</testItem>
+							<testItem name="tagged function" key="{1F5A2B3C-2E43-4428-97D9-FF964BFAAF59}" group="False" enabled="False" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="boolDataDriven" type="3" localVarName="" varType="11" value="False" />
+									<param1 name="stringColumnName" type="3" localVarName="" varType="8" value="Name" />
+									<param2 name="stringVariableTable" type="3" localVarName="" varType="8" value="BaseUI.testFunction()" />
+								</testParameters>
+								<children />
+							</testItem>
 							<testItem name="Enter some text" key="{D7521051-9CF9-4D7D-AF19-8120267A1C4C}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="boolDataDriven" type="3" localVarName="" varType="11" value="True" />
@@ -55,7 +63,7 @@
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem1" key="{E604DF15-8F8B-46AE-9ED6-32C7CFDF7DC1}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="Press Enter key" key="{E604DF15-8F8B-46AE-9ED6-32C7CFDF7DC1}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="boolDataDriven" type="3" localVarName="" varType="11" value="False" />
 									<param1 name="stringColumnName" type="3" localVarName="" varType="0" value="" />
