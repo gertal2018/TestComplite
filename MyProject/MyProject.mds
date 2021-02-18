@@ -24,7 +24,7 @@
 						</testParameters>
 						<children />
 					</testItem>
-					<testItem name="DataDriven" key="{DB85362F-20FF-4A90-ABBD-30C314EAE2BA}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDriven" count="10" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="DataDriven" key="{DB85362F-20FF-4A90-ABBD-30C314EAE2BA}" group="False" enabled="False" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDriven" count="10" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children>
 							<testItem name="Click notepad" key="{2FF59A75-F17F-490A-896B-A07B1EFB71BB}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -49,29 +49,83 @@
 							</testItem>
 							<testItem name="tagged function" key="{1F5A2B3C-2E43-4428-97D9-FF964BFAAF59}" group="False" enabled="False" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="boolDataDriven" type="3" localVarName="" varType="11" value="False" />
-									<param1 name="stringColumnName" type="3" localVarName="" varType="8" value="Name" />
-									<param2 name="stringVariableTable" type="3" localVarName="" varType="8" value="BaseUI.testFunction()" />
+									<param0 name="stringText" type="3" localVarName="" varType="0" value="" />
 								</testParameters>
 								<children />
 							</testItem>
 							<testItem name="Enter some text" key="{D7521051-9CF9-4D7D-AF19-8120267A1C4C}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="boolDataDriven" type="3" localVarName="" varType="11" value="True" />
-									<param1 name="stringColumnName" type="3" localVarName="" varType="8" value="Name" />
-									<param2 name="stringVariableTable" type="3" localVarName="DataDriven1" localVarLevel="1" value="" />
+									<param0 name="stringText" type="3" localVarName="" varType="0" value="" />
 								</testParameters>
 								<children />
 							</testItem>
 							<testItem name="Press Enter key" key="{E604DF15-8F8B-46AE-9ED6-32C7CFDF7DC1}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="boolDataDriven" type="3" localVarName="" varType="11" value="False" />
-									<param1 name="stringColumnName" type="3" localVarName="" varType="0" value="" />
-									<param2 name="stringVariableTable" type="3" localVarName="" varType="8" value="[Enter]" />
+									<param0 name="stringText" type="3" localVarName="" varType="0" value="" />
 								</testParameters>
 								<children />
 							</testItem>
 						</children>
+					</testItem>
+					<testItem name="DataDriven bolja funkcija" key="{8F359DE2-27EB-4CEC-B25E-19EB0DA324C8}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenBoljaFunkcija" count="10" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="varTableVariable" type="3" localVarName="DataDriven1" localVarLevel="1" value="" />
+						</testParameters>
+						<children>
+							<testItem name="Click notepad" key="{29AC1364-B2CE-40D2-BDEE-6AA65839AA44}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="strDict" type="3" localVarName="" varType="8" value="dict" />
+									<param1 name="strElementName" type="3" localVarName="" varType="8" value="nppMainWindow" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{DD64E57E-3269-42EB-8694-1429BB0D1C8B}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value="ID: " />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{21995317-9AE3-4F4A-9703-B23E1AA548D6}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="dataDrivenVariableTemp0" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{937BA51F-8F8B-4266-9713-8E11CD3CF3EE}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value=" - Model: " />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{B34778DF-87C2-4C2D-9022-76F4DFD0D43E}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="dataDrivenVariableTemp1" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{A44D7A4C-0B5D-4706-842E-A6B3A1C506B5}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value=" - Godiste: " />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{21E4099C-C68D-4F16-8B59-A70FCF996B5D}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="dataDrivenVariableTemp2" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Press Enter key" key="{4E1650E6-62AC-4C13-8111-4C22885ADB6B}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value="[Enter]" />
+								</testParameters>
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Clean Data Driven variables" key="{BFD404D3-C0F3-47E2-9C8F-71202C611D52}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}cleanDataDrivenVariables" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
 					</testItem>
 				</children>
 			</testItem>
@@ -146,18 +200,18 @@
 		<data Version="4">
 			<Items>
 				<Variable Name="DataDriven1" Type="Table" Local="False">
-					<DefValue RowCount="10" ColumnCount="2">
-						<Columns ColumnName0="ID" ColumnName1="Name" />
-						<Row No="0" Cell0Type="3" Cell0="1" Cell1="Honda" />
-						<Row No="1" Cell0Type="3" Cell0="2" Cell1="Mazda" />
-						<Row No="2" Cell0Type="3" Cell0="3" Cell1="Peugeot" />
-						<Row No="3" Cell0Type="3" Cell0="4" Cell1="Citroen" />
-						<Row No="4" Cell0Type="3" Cell0="5" Cell1="Renault" />
-						<Row No="5" Cell0Type="3" Cell0="6" Cell1="Audi" />
-						<Row No="6" Cell0Type="3" Cell0="7" Cell1="BMW" />
-						<Row No="7" Cell0Type="3" Cell0="8" Cell1="Ferarri" />
-						<Row No="8" Cell0Type="3" Cell0="9" Cell1="DeLorean" />
-						<Row No="9" Cell0Type="3" Cell0="10" Cell1="Jaguar" />
+					<DefValue RowCount="10" ColumnCount="3">
+						<Columns ColumnName0="ID" ColumnName1="Name" ColumnName2="Surname" />
+						<Row No="0" Cell0Type="3" Cell0="1" Cell1="Honda" Cell2="2006" />
+						<Row No="1" Cell0Type="3" Cell0="2" Cell1="Mazda" Cell2="2009" />
+						<Row No="2" Cell0Type="3" Cell0="3" Cell1="Peugeot" Cell2="2003" />
+						<Row No="3" Cell0Type="3" Cell0="4" Cell1="Citroen" Cell2="2012" />
+						<Row No="4" Cell0Type="3" Cell0="5" Cell1="Renault" Cell2="1999" />
+						<Row No="5" Cell0Type="3" Cell0="6" Cell1="Audi" Cell2="2002" />
+						<Row No="6" Cell0Type="3" Cell0="7" Cell1="BMW" Cell2="2019" />
+						<Row No="7" Cell0Type="3" Cell0="8" Cell1="Ferarri" Cell2="2000" />
+						<Row No="8" Cell0Type="3" Cell0="9" Cell1="DeLorean" Cell2="1985" />
+						<Row No="9" Cell0Type="3" Cell0="10" Cell1="Jaguar" Cell2="1977" />
 					</DefValue>
 				</Variable>
 				<Variable Name="DataDrivenCounter" Type="Integer" Local="False">

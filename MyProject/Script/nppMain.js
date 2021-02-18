@@ -61,11 +61,17 @@ function SelectChildMenuBar(srtParentName, strChildName)
     Log.Error(strChildName + " is not present under " + srtParentName);
 }
 
-// Parameter 1: stringColumnName: define a column name from variable table
-function enterTextIntoNotepadPLusPLus(boolDataDriven, stringColumnName, stringVariableTable)
+ //Parameter 1: stringColumnName: define a column name from variable table
+function enterTextIntoNotepadPLusPLus(stringText)
 {
-  if(boolDataDriven)
-    EnterTextToObject("dict", "nppMainTextBox", ReturnVariableValue(stringColumnName, stringVariableTable));
-  else
-    EnterTextToObject("dict", "nppMainTextBox", stringVariableTable);
+    EnterTextToObject("dict", "nppMainTextBox", stringText);
 }
+
+// Parameter 1: stringColumnName: define a column name from variable table
+//function enterTextIntoNotepadPLusPLus(boolDataDriven, stringColumnName, stringVariableTable)
+//{
+//  if(boolDataDriven)
+//    EnterTextToObject("dict", "nppMainTextBox", ReturnVariableValue(stringColumnName, stringVariableTable));
+//  else
+//    EnterTextToObject("dict", "nppMainTextBox", stringVariableTable);
+//}

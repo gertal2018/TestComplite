@@ -118,6 +118,70 @@ function DataDriven()
   Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration - 1;
 }
 
+function DataDrivenBoljaFunkcija(varTableVariable)
+{
+  Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration - 1;
+  var numberOfIterations = Project.Variables.DataDrivenCounter;
+  var numberOfRows = varTableVariable.RowCount;
+  var variableName = "dataDrivenVariableTemp";
+  
+  if(numberOfIterations + 1 > numberOfRows)
+    Log.Error("Number of iterations: " + numberOfIterations + 1 + " is larger that rows in variable table: " + numberOfRows);
+  else
+  {
+    var numberOfColumns = varTableVariable.ColumnCount;
+  
+    for(var i = 0; i < numberOfColumns; i++)
+    {
+      var currnetVariableValue = varTableVariable.Item(i,numberOfIterations);
+      var currentVarType = aqObject.GetVarType(currnetVariableValue);
+      
+      switch (currentVarType)
+      {
+        case 0:
+          currentVarType = "Empty";
+          break;
+        case 3:
+          currentVarType = "Integer";
+          break;
+        case 8:
+          currentVarType = "String";
+          break;
+      }
+
+      var currentVariableName = variableName+i;
+      var boolVariableAlreadyExists = Project.Variables.VariableExists(currentVariableName);
+      
+      if(boolVariableAlreadyExists)
+      {
+        Project.Variables.RemoveVariable(currentVariableName);
+        Project.Variables.AddVariable(currentVariableName, currentVarType);
+        Project.Variables.$set(currentVariableName, currnetVariableValue);
+      }
+      else
+      {
+        Project.Variables.AddVariable(currentVariableName, currentVarType);
+        Project.Variables.$set(currentVariableName, currnetVariableValue);
+      }
+      
+    }
+  }
+  
+}
+
+function cleanDataDrivenVariables()
+{
+  var variableName = "dataDrivenVariableTemp";
+  for(var i = 0; i < 100; i++)
+  {
+    var currentVariableName = variableName+i;
+    var boolVariableAlreadyExists = Project.Variables.VariableExists(currentVariableName);
+      
+    if(boolVariableAlreadyExists)
+      Project.Variables.RemoveVariable(currentVariableName);
+  }
+}
+
 function driver(stringPath, stringFileName)
 {
   DDT.ExcelDriver(stringPath, stringFileName);
