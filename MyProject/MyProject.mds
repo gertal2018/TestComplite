@@ -123,7 +123,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Clean Data Driven variables" key="{BFD404D3-C0F3-47E2-9C8F-71202C611D52}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}cleanDataDrivenVariables" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Clean Data Driven variables" key="{BFD404D3-C0F3-47E2-9C8F-71202C611D52}" group="False" enabled="False" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}cleanDataDrivenVariables" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children />
 					</testItem>
