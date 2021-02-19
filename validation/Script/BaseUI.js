@@ -166,8 +166,78 @@ function DataDrivenViaTableVariable(varTableVariable, intStartFromInteration)
       }  
     }
   }
-  
 }
+
+function DataDrivenViaTableExcel(stringExcelPath, stringSheetName, intStartFromInteration)
+{
+  var numberOfIterations = Project.TestItems.Current.Iteration - 1;
+  var arrayValuesFromExcel =[];
+  if(intStartFromInteration != undefined)
+  {
+    numberOfIterations = numberOfIterations + intStartFromInteration - 1;
+  }
+  
+  var variableName = "dataDrivenVariableTemp";
+  var Driver = DDT.ExcelDriver(stringExcelPath, stringSheetName);
+  var numberOfColumns = Driver.ColumnCount;
+  var currentInteration = numberOfIterations * numberOfColumns;
+  while(!Driver.EOF())
+  {
+    for(var i = 0; i < numberOfColumns; i++)
+    {
+      var currnetVariableValue = Driver.Value(i);
+      arrayValuesFromExcel.push(currnetVariableValue);
+    }
+    Driver.Next();
+  }
+  DDT.CloseDriver(Driver.Name);  
+  
+  var numberOfRows = arrayValuesFromExcel.length / numberOfColumns;
+  if(numberOfIterations + 1 > numberOfRows)
+  {
+    numberOfIterations = numberOfIterations + 1;
+    Log.Error("Number of iterations: " + numberOfIterations + " is larger that rows in variable table: " + numberOfRows);
+  } 
+  else
+  {
+    for(var i = 0; i < numberOfColumns; i++)
+    {
+      var currnetVariableValue = arrayValuesFromExcel[currentInteration + i];
+      var currentVarType = aqObject.GetVarType(currnetVariableValue);
+      
+      switch (currentVarType)
+      {
+        case 0:
+          currentVarType = "Empty";
+          break;
+        case 3:
+          currentVarType = "Integer";
+          break;
+        case 8:
+          currentVarType = "String";
+          break;
+      }
+
+      var currentVariableName = variableName+i;
+      var boolVariableAlreadyExists = Project.Variables.VariableExists(currentVariableName);
+      
+      if(boolVariableAlreadyExists)
+      {
+        Project.Variables.RemoveVariable(currentVariableName);
+        Project.Variables.AddVariable(currentVariableName, currentVarType);
+        Project.Variables.$set(currentVariableName, currnetVariableValue);
+        Log.Checkpoint(currnetVariableValue);
+      }
+      else
+      {
+        Project.Variables.AddVariable(currentVariableName, currentVarType);
+        Project.Variables.$set(currentVariableName, currnetVariableValue);
+        Log.Checkpoint(currnetVariableValue);
+      }  
+    }
+  }
+}
+
 
 function cleanDataDrivenVariables()
 {

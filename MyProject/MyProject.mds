@@ -24,7 +24,7 @@
 						</testParameters>
 						<children />
 					</testItem>
-					<testItem name="DataDriven bolja funkcija" key="{8F359DE2-27EB-4CEC-B25E-19EB0DA324C8}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableVariable" count="10" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="DataDriven via TableVariable" key="{8F359DE2-27EB-4CEC-B25E-19EB0DA324C8}" group="False" enabled="False" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableVariable" count="10" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
 							<param0 name="varTableVariable" type="3" localVarName="DataDriven1" localVarLevel="1" value="" />
 							<param1 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
@@ -91,6 +91,64 @@
 							<param1 name="strChildName" type="3" localVarName="" varType="8" value="Find..." />
 						</testParameters>
 						<children />
+					</testItem>
+					<testItem name="DataDriven via Excel" key="{8A80F381-1E35-45EC-986D-263E1F3D9B02}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableExcel" count="10" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="stringExcelPath" type="3" localVarName="" varType="8" value="C:\DataDrivenExcel.xlsx" />
+							<param1 name="stringSheetName" type="3" localVarName="" varType="8" value="Automobili" />
+							<param2 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
+						</testParameters>
+						<children>
+							<testItem name="Click notepad" key="{F93392F3-0BF7-49FC-AB6E-D74B68A0EE16}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="strDict" type="3" localVarName="" varType="8" value="dict" />
+									<param1 name="strElementName" type="3" localVarName="" varType="8" value="nppMainWindow" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{8691B8A5-9368-456E-AD81-30EB02546D8E}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value="ID: " />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{0D3ADA00-0E6B-4C25-9406-E477AE0EBB9D}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="dataDrivenVariableTemp0" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{D7026E10-2DB1-4AB7-920B-7A5662215BED}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value=" - Model: " />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{FF8ED15F-2918-46B5-A60D-14758ADCF262}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="dataDrivenVariableTemp1" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{088408C3-01CF-4464-8065-015050AB792F}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value=" - Godiste: " />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Enter some text" key="{211E0C17-667A-4769-B5BC-387F2F48770E}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="dataDrivenVariableTemp2" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="Press Enter key" key="{0614BA86-F349-4E64-AC05-015137AB507F}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="stringText" type="3" localVarName="" varType="8" value="[Enter]" />
+								</testParameters>
+								<children />
+							</testItem>
+						</children>
 					</testItem>
 				</children>
 			</testItem>
@@ -185,7 +243,10 @@
 				<Variable Name="dataDrivenVariableTemp1" Type="String" Local="True">
 					<DefValue />
 				</Variable>
-				<Variable Name="dataDrivenVariableTemp2" Type="String" Local="True">
+				<Variable Name="dataDrivenVariableTemp2" Type="Integer" Local="True">
+					<DefValue IntValue="0" />
+				</Variable>
+				<Variable Name="dataDrivenVariableTemp3" Type="String" Local="True">
 					<DefValue />
 				</Variable>
 			</Items>
