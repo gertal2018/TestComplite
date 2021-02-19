@@ -113,20 +113,21 @@ function testinfExcel()
 DDT.CloseDriver(Driver.Name); 
 }
 
-function DataDriven()
+function DataDrivenViaTableVariable(varTableVariable, intStartFromInteration)
 {
-  Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration - 1;
-}
-
-function DataDrivenBoljaFunkcija(varTableVariable)
-{
-  Project.Variables.DataDrivenCounter = Project.TestItems.Current.Iteration - 1;
-  var numberOfIterations = Project.Variables.DataDrivenCounter;
+  var numberOfIterations = Project.TestItems.Current.Iteration - 1;
+  if(intStartFromInteration != undefined)
+  {
+    numberOfIterations = numberOfIterations + intStartFromInteration - 1;
+  }
   var numberOfRows = varTableVariable.RowCount;
   var variableName = "dataDrivenVariableTemp";
   
   if(numberOfIterations + 1 > numberOfRows)
-    Log.Error("Number of iterations: " + numberOfIterations + 1 + " is larger that rows in variable table: " + numberOfRows);
+  {
+    numberOfIterations = numberOfIterations + 1;
+    Log.Error("Number of iterations: " + numberOfIterations + " is larger that rows in variable table: " + numberOfRows);
+  } 
   else
   {
     var numberOfColumns = varTableVariable.ColumnCount;
@@ -162,8 +163,7 @@ function DataDrivenBoljaFunkcija(varTableVariable)
       {
         Project.Variables.AddVariable(currentVariableName, currentVarType);
         Project.Variables.$set(currentVariableName, currnetVariableValue);
-      }
-      
+      }  
     }
   }
   

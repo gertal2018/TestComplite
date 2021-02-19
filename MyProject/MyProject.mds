@@ -24,52 +24,10 @@
 						</testParameters>
 						<children />
 					</testItem>
-					<testItem name="DataDriven" key="{DB85362F-20FF-4A90-ABBD-30C314EAE2BA}" group="False" enabled="False" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDriven" count="10" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<children>
-							<testItem name="Click notepad" key="{2FF59A75-F17F-490A-896B-A07B1EFB71BB}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-								<testParameters>
-									<param0 name="strDict" type="3" localVarName="" varType="8" value="dict" />
-									<param1 name="strElementName" type="3" localVarName="" varType="8" value="nppMainWindow" />
-								</testParameters>
-								<children />
-							</testItem>
-							<testItem name="Select tab" key="{38FF1CA2-43AE-440A-AFC8-D140B9A9CF2D}" group="False" enabled="False" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}selectTab" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-								<testParameters>
-									<param0 name="strTabName" type="3" localVarName="" varType="8" value="new 1" />
-								</testParameters>
-								<children />
-							</testItem>
-							<testItem name="Create new file" key="{1699DA80-A1F1-43A0-961E-051533B4D76F}" group="False" enabled="False" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}SelectChildMenuBar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-								<testParameters>
-									<param0 name="srtParentName" type="3" localVarName="" varType="8" value="File" />
-									<param1 name="strChildName" type="3" localVarName="" varType="8" value="New" />
-								</testParameters>
-								<children />
-							</testItem>
-							<testItem name="tagged function" key="{1F5A2B3C-2E43-4428-97D9-FF964BFAAF59}" group="False" enabled="False" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-								<testParameters>
-									<param0 name="stringText" type="3" localVarName="" varType="0" value="" />
-								</testParameters>
-								<children />
-							</testItem>
-							<testItem name="Enter some text" key="{D7521051-9CF9-4D7D-AF19-8120267A1C4C}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-								<testParameters>
-									<param0 name="stringText" type="3" localVarName="" varType="0" value="" />
-								</testParameters>
-								<children />
-							</testItem>
-							<testItem name="Press Enter key" key="{E604DF15-8F8B-46AE-9ED6-32C7CFDF7DC1}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-								<testParameters>
-									<param0 name="stringText" type="3" localVarName="" varType="0" value="" />
-								</testParameters>
-								<children />
-							</testItem>
-						</children>
-					</testItem>
-					<testItem name="DataDriven bolja funkcija" key="{8F359DE2-27EB-4CEC-B25E-19EB0DA324C8}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenBoljaFunkcija" count="10" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="DataDriven bolja funkcija" key="{8F359DE2-27EB-4CEC-B25E-19EB0DA324C8}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableVariable" count="10" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
 							<param0 name="varTableVariable" type="3" localVarName="DataDriven1" localVarLevel="1" value="" />
+							<param1 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
 						</testParameters>
 						<children>
 							<testItem name="Click notepad" key="{29AC1364-B2CE-40D2-BDEE-6AA65839AA44}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -125,6 +83,13 @@
 					</testItem>
 					<testItem name="Clean Data Driven variables" key="{BFD404D3-C0F3-47E2-9C8F-71202C611D52}" group="False" enabled="False" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}cleanDataDrivenVariables" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem1" key="{429FCAC8-C2B9-4A5A-9495-854EA676318D}" group="False" enabled="False" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}SelectChildMenuBar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="srtParentName" type="3" localVarName="" varType="8" value="Search" />
+							<param1 name="strChildName" type="3" localVarName="" varType="8" value="Find..." />
+						</testParameters>
 						<children />
 					</testItem>
 				</children>
@@ -214,8 +179,14 @@
 						<Row No="9" Cell0Type="3" Cell0="10" Cell1="Jaguar" Cell2="1977" />
 					</DefValue>
 				</Variable>
-				<Variable Name="DataDrivenCounter" Type="Integer" Local="False">
+				<Variable Name="dataDrivenVariableTemp0" Type="Integer" Local="True">
 					<DefValue IntValue="0" />
+				</Variable>
+				<Variable Name="dataDrivenVariableTemp1" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="dataDrivenVariableTemp2" Type="String" Local="True">
+					<DefValue />
 				</Variable>
 			</Items>
 		</data>
