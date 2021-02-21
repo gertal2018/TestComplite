@@ -96,7 +96,7 @@
 						<testParameters>
 							<param0 name="stringExcelPath" type="3" localVarName="" varType="8" value="C:\DataDrivenExcel.xlsx" />
 							<param1 name="stringSheetName" type="3" localVarName="" varType="8" value="Automobili" />
-							<param2 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
+							<param2 name="intStartFromInteration" type="3" localVarName="" varType="3" value="5" />
 						</testParameters>
 						<children>
 							<testItem name="Click notepad" key="{F93392F3-0BF7-49FC-AB6E-D74B68A0EE16}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">

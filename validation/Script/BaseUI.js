@@ -148,6 +148,12 @@ function DataDrivenViaTableVariable(varTableVariable, intStartFromInteration)
         case 8:
           currentVarType = "String";
           break;
+        case 11:
+          currentVarType = "Boolean";
+          break;
+        case 12:
+          currentVarType = "Variant";
+          break;
       }
 
       var currentVariableName = variableName+i;
@@ -216,6 +222,12 @@ function DataDrivenViaTableExcel(stringExcelPath, stringSheetName, intStartFromI
         case 8:
           currentVarType = "String";
           break;
+        case 11:
+          currentVarType = "Boolean";
+          break;
+        case 12:
+          currentVarType = "Variant";
+          break;
       }
 
       var currentVariableName = variableName+i;
@@ -226,13 +238,11 @@ function DataDrivenViaTableExcel(stringExcelPath, stringSheetName, intStartFromI
         Project.Variables.RemoveVariable(currentVariableName);
         Project.Variables.AddVariable(currentVariableName, currentVarType);
         Project.Variables.$set(currentVariableName, currnetVariableValue);
-        Log.Checkpoint(currnetVariableValue);
       }
       else
       {
         Project.Variables.AddVariable(currentVariableName, currentVarType);
         Project.Variables.$set(currentVariableName, currnetVariableValue);
-        Log.Checkpoint(currnetVariableValue);
       }  
     }
   }
