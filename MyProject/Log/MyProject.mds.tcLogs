@@ -20,7 +20,98 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.1770840162"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{9D99B0BA-180B-43D8-8E2C-B767CF8AC4C5}"/>
+				<Prp name="nameofroot" type="S" value="First Test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_15 AM_00_59\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.1777549537"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{F47F7161-5E25-4D87-ACC7-7A7385C0BC0A}"/>
+				<Prp name="nameofroot" type="S" value="First Test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_15 AM_58_28\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.178753588"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D3D7D7AA-6338-490E-818B-52601935C6B4}"/>
+				<Prp name="nameofroot" type="S" value="First Test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_17 AM_24_310\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.179300463"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{225FAD71-3A48-4D70-947C-966CEC1D63DB}"/>
+				<Prp name="nameofroot" type="S" value="First Test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_18 AM_11_560\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.180109375"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D7F04E63-683F-44BE-90F0-E38E9E32C84B}"/>
+				<Prp name="nameofroot" type="S" value="First Test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_19 AM_21_450\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.183243287"/>
+				<Prp name="description" type="S" value="ProjectTestItem2"/>
+				<Prp name="key" type="S" value="{79D1E911-7F2E-4422-96A8-EF487EA8925B}"/>
+				<Prp name="nameofroot" type="S" value="ProjectTestItem2"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_23 AM_52_220\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.1842787037"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{257C682B-52D8-42C3-AFC7-E598EBCBA81F}"/>
+				<Prp name="nameofroot" type="S" value="ProjectTestItem2"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_25 AM_21_680\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.1857218634"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{11455083-D1B2-4B8B-AFA9-3C5AFDE32350}"/>
+				<Prp name="nameofroot" type="S" value="DataDriven via TableVariable boolean test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_27 AM_26_369\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.1860716435"/>
+				<Prp name="description" type="S" value="DataDriven via TableVariable boolean test"/>
+				<Prp name="key" type="S" value="{4CF00073-3141-4BAE-8045-8E6EDEFDB163}"/>
+				<Prp name="nameofroot" type="S" value="DataDriven via TableVariable boolean test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_27 AM_56_590\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44249.1866171065"/>
+				<Prp name="description" type="S" value="DataDriven via TableVariable boolean test"/>
+				<Prp name="key" type="S" value="{4DD713FE-834D-4C90-93DC-65AD270CF8B6}"/>
+				<Prp name="nameofroot" type="S" value="DataDriven via TableVariable boolean test"/>
+				<Prp name="relpath" type="S" value="2_22_2021_4_28 AM_43_718\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

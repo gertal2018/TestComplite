@@ -24,7 +24,35 @@
 				<Prp name="key" type="S" value="{CBB659D8-518E-4986-931A-2C0146238EEE}"/>
 				<Prp name="relpath" type="S" value="Log"/>
 			</Node>
-			<Node name="variables"/>
+			<Node name="variables">
+				<Node name="datav4">
+					<Node name="var0">
+						<Prp name="name" type="S" value="DataDriven1"/>
+					</Node>
+					<Node name="var1">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value=" "/>
+						</Node>
+						<Prp name="name" type="S" value="dataDrivenVariableTemp3"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="460041004C0053004500"/>
+						</Node>
+						<Prp name="name" type="S" value="dataDrivenVariableTemp1"/>
+					</Node>
+					<Node name="var3">
+						<Prp name="name" type="S" value="DataDriven2"/>
+					</Node>
+					<Node name="var4">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="7400720075006500"/>
+						</Node>
+						<Prp name="name" type="S" value="dataDrivenVariableTemp0"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="4"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
 	</Node>

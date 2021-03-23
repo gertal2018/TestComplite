@@ -92,11 +92,11 @@
 						</testParameters>
 						<children />
 					</testItem>
-					<testItem name="DataDriven via Excel" key="{8A80F381-1E35-45EC-986D-263E1F3D9B02}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableExcel" count="10" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="DataDriven via Excel" key="{8A80F381-1E35-45EC-986D-263E1F3D9B02}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableExcel" count="6" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters>
-							<param0 name="stringExcelPath" type="3" localVarName="" varType="8" value="C:\DataDrivenExcel.xlsx" />
-							<param1 name="stringSheetName" type="3" localVarName="" varType="8" value="Automobili" />
-							<param2 name="intStartFromInteration" type="3" localVarName="" varType="3" value="5" />
+							<param0 name="stringExcelPath" type="3" localVarName="" varType="8" value="..\\DataDriven\podaci.xlsx" />
+							<param1 name="stringSheetName" type="3" localVarName="" varType="8" value="proizvodi" />
+							<param2 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
 						</testParameters>
 						<children>
 							<testItem name="Click notepad" key="{F93392F3-0BF7-49FC-AB6E-D74B68A0EE16}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}ClickElement" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -145,6 +145,35 @@
 							<testItem name="Press Enter key" key="{0614BA86-F349-4E64-AC05-015137AB507F}" group="False" enabled="True" testMoniker="{38803851-9624-4652-B162-1FFFAD91FDE3}enterTextIntoNotepadPLusPLus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="stringText" type="3" localVarName="" varType="8" value="[Enter]" />
+								</testParameters>
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="DataDriven via Excel boolean test" key="{4F675CB5-4FE5-47A2-B768-1D78FCE0813C}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableExcel" count="3" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="stringExcelPath" type="3" localVarName="" varType="8" value="..\DataDriven\podaci.xlsx" />
+							<param1 name="stringSheetName" type="3" localVarName="" varType="8" value="drugipodaci" />
+							<param2 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
+						</testParameters>
+						<children>
+							<testItem name="test bool value" key="{01BE92E7-1EE4-493A-A47F-8A9242B54D9D}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}testBool" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="myBool" type="3" localVarName="dataDrivenVariableTemp0" localVarLevel="1" value="" />
+								</testParameters>
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="DataDriven via TableVariable boolean test" key="{16094C3F-705C-4E0D-97E6-EF77B616A5F4}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}DataDrivenViaTableVariable" count="3" timeout="0" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="varTableVariable" type="3" localVarName="DataDriven2" localVarLevel="1" value="" />
+							<param1 name="intStartFromInteration" type="3" localVarName="" varType="0" value="" />
+						</testParameters>
+						<children>
+							<testItem name="test bool value" key="{74D9D2B5-AABC-4BD3-9FF0-1628D774F829}" group="False" enabled="True" testMoniker="{FF630D00-0445-43C1-9306-A88E3DCD26FB}testBool" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="myBool" type="3" localVarName="dataDrivenVariableTemp0" localVarLevel="1" value="" />
 								</testParameters>
 								<children />
 							</testItem>
@@ -237,16 +266,21 @@
 						<Row No="9" Cell0Type="3" Cell0="10" Cell1="Jaguar" Cell2="1977" />
 					</DefValue>
 				</Variable>
-				<Variable Name="dataDrivenVariableTemp0" Type="Integer" Local="True">
-					<DefValue IntValue="0" />
+				<Variable Name="dataDrivenVariableTemp3" Type="String" Local="True">
+					<DefValue />
 				</Variable>
 				<Variable Name="dataDrivenVariableTemp1" Type="String" Local="True">
 					<DefValue />
 				</Variable>
-				<Variable Name="dataDrivenVariableTemp2" Type="Integer" Local="True">
-					<DefValue IntValue="0" />
+				<Variable Name="DataDriven2" Type="Table" Local="False">
+					<DefValue RowCount="3" ColumnCount="1">
+						<Columns />
+						<Row No="0" Cell0="True" />
+						<Row No="1" Cell0="False" />
+						<Row No="2" Cell0="True" />
+					</DefValue>
 				</Variable>
-				<Variable Name="dataDrivenVariableTemp3" Type="String" Local="True">
+				<Variable Name="dataDrivenVariableTemp0" Type="String" Local="True">
 					<DefValue />
 				</Variable>
 			</Items>

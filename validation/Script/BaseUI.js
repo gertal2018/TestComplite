@@ -183,6 +183,11 @@ function DataDrivenViaTableExcel(stringExcelPath, stringSheetName, intStartFromI
     numberOfIterations = numberOfIterations + intStartFromInteration - 1;
   }
   
+  if(aqString.StrMatches("..\\",stringExcelPath))
+  {
+    stringExcelPath = aqString.Replace(stringExcelPath,"..\\", ProjectSuite.Path)
+  }
+  
   var variableName = "dataDrivenVariableTemp";
   var Driver = DDT.ExcelDriver(stringExcelPath, stringSheetName);
   var numberOfColumns = Driver.ColumnCount;
@@ -307,4 +312,13 @@ function ReturnExcelValue(stringFilePath, stringSheetName)
       }
 
       DDT.CloseDriver(Driver.Name); 
+}
+
+function testBool(myBool)
+{
+  if(myBool)
+    Log.Checkpoint("Its True");
+  else
+    Log.Checkpoint("Its false");
+  
 }
