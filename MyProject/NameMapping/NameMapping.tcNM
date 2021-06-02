@@ -75,6 +75,55 @@
 										<Value Value="Notepad" />
 									</Property>
 								</Properties>
+								<Children>
+									<Child Name="TextBox" Key="{090D1D65-7607-43CC-9CCA-E21E5CE160FD}">
+										<Image FileName="1666640589" Left="8" Top="51" Right="1432" Bottom="728" />
+										<TypeInfo Item0="{8467CE82-8D4A-473B-B863-EAD654924B00}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="Caption">
+												<Value Value="Text Editor" />
+											</Property>
+											<Property Name="ObjectGroupIndex">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="menubar" Key="{EA6035FB-F751-467C-8421-0C4133D11F3A}">
+										<Image FileName="-582987733" Left="8" Top="31" Right="1432" Bottom="50" />
+										<TypeInfo Item0="{6E75B117-E536-4CDD-8C2E-6ED54F6665A0}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="MenuBar" />
+											</Property>
+											<Property Name="Caption">
+												<Value Value="Application" />
+											</Property>
+											<Property Name="ObjectGroupIndex">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="btnHelp" Key="{AFDAD4DF-86EA-43CF-B404-0248CFD94064}">
+												<Image FileName="-582987733" Left="165" Top="31" Right="204" Bottom="50" />
+												<TypeInfo Item0="{CAC670DB-7AD1-4129-964D-489F3B9B8670}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="MenuItem" />
+													</Property>
+													<Property Name="Caption">
+														<Value Value="Help" />
+													</Property>
+													<Property Name="ObjectGroupIndex">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
 							</Child>
 						</Children>
 					</Child>
@@ -184,8 +233,6 @@
 										</Properties>
 										<Children>
 											<Child Name="menuitemView" Key="{4DAC788D-16E3-42F7-BD2E-B100A986DCEE}">
-												<Image FileName="1629547191" Left="115" Top="23" Right="154" Bottom="42" />
-												<TypeInfo Item0="{5B0888DC-D78E-4C61-80CC-712D7596C67F}" />
 												<Properties>
 													<Property Name="ObjectType">
 														<Value Value="MenuItem" />
@@ -411,7 +458,12 @@
 			</Child>
 		</Child>
 		<Child Name="notepad" Owner="{C777D7F9-F4C4-4232-BADB-9C60BDB64CEF}">
-			<Child Name="wndNotepad" Owner="{42507FE8-156F-4ADD-B451-FEB25F100077}" />
+			<Child Name="wndNotepad" Owner="{42507FE8-156F-4ADD-B451-FEB25F100077}">
+				<Child Name="TextBox" Owner="{090D1D65-7607-43CC-9CCA-E21E5CE160FD}" />
+				<Child Name="menubar" Owner="{EA6035FB-F751-467C-8421-0C4133D11F3A}">
+					<Child Name="btnHelp" Owner="{AFDAD4DF-86EA-43CF-B404-0248CFD94064}" />
+				</Child>
+			</Child>
 		</Child>
 		<Child Name="notepadPlusPlus" Owner="{73E7FF04-1AC0-4E47-97DA-CB0038D2AF95}">
 			<Child Name="MainWindow" Owner="{38631314-95D0-44D5-A1B4-0218ACFF978B}">

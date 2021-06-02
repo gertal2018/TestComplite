@@ -1,4 +1,4 @@
-﻿function defineDictionary(strKeyValue)
+﻿function defineDictionary(strApplication, strKeyValue)
 {
   var dict = {
   // Word name mapping
@@ -7,19 +7,41 @@
   
   // Notepad Name Mapping:
   notepadMainWindow : Aliases.notepad.wndNotepad,
+  notepadTextBox : Aliases.notepad.wndNotepad.TextBox,
   
   // Notepad ++
   nppMainWindow : Aliases.notepadPlusPlus.MainWindow,
+  nppMainMenuBar : Aliases.notepadPlusPlus.MainWindow.mainMenubar,
   nppToobar : Aliases.notepadPlusPlus.MainWindow.toolbar,
   nppMainToolbar : Aliases.notepadPlusPlus.MainWindow.mainToolbar,
   nppMainTextBox : Aliases.notepadPlusPlus.MainWindow.MainTextBox,
-  nppTabList : Aliases.notepadPlusPlus.MainWindow.TabList
+  nppTabList : Aliases.notepadPlusPlus.MainWindow.TabList,
   }
-  return dict[strKeyValue];
+  
+  var polovniAutomobili = {
+  // Word name mapping
+  detaljnaPretragaButton : "//button[.='Detaljna pretraga']",
+  pretragaButton : "//button[.='PRETRAGA']",
+  
+  // detaljna pretraga page
+  karoserijaDropdown : "//span[@class='placeholder' and .=' Karoserija']",
+  menjacDropdown : "//span[@class='placeholder' and .=' Menjač']",
+  cenaDo : "//input[@id='price_to']",
+  sortirajDropdown : Aliases.Chrome.pagePretragaAutomobilaPolovniAut.sortirajDropdown,
+  sortirajDropdownOption : Aliases.Chrome.pagePretragaAutomobilaPolovniAut.sortirajDropdownList,
+  
+  // rezultati
+  sledecaStranicaButton : "//a[@title='Sledeća stranica']"
+  }
+  
+  if(aqString.Compare(strApplication, "polovniAutomobili", false) == 0)
+    return polovniAutomobili[strKeyValue];
+  else if(aqString.Compare(strApplication, "dict", false) == 0)
+    return dict[strKeyValue];
 }
 
-function returnObject(stringObjectName)
+function returnObject(stringDictionary, stringObjectName)
 {
-  var myObject = defineDictionary(stringObjectName);
+  var myObject = defineDictionary(stringDictionary, stringObjectName);
   return myObject;
 }

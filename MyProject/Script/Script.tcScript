@@ -4,6 +4,7 @@
 		<folder name="Base">
 			<child name="BaseUI" key="{FF630D00-0445-43C1-9306-A88E3DCD26FB}" path="..\..\validation\Script\BaseUI.js" />
 			<child name="Repository" key="{F141CF70-9BA5-4002-BA51-0248B39B64E3}" path="Repository.js" />
+			<child name="ImageRecognition" key="{E22B6C7B-F487-480E-B08B-F63C0894BFD5}" path="ImageRecognition.js" />
 		</folder>
 		<folder name="NotepadPlusPLus">
 			<child name="nppMain" key="{38803851-9624-4652-B162-1FFFAD91FDE3}" path="nppMain.js" />

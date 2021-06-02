@@ -48,12 +48,12 @@ function ClickElement(strDict, strElementName)
     
     if(myElement.WaitProperty("Enabled", true, 5000))
     {
-      Log.Checkpoint("Clicking on element " + strElementName)
+      Log.Checkpoint("Clicking on element " + strElementName);
       myElement.Click();
     }
     else
     {
-      Log.Error("Element " + strElementName + " is not clickable.")
+      Log.Error("Element " + strElementName + " is not clickable.");
     }
    
   }
@@ -65,17 +65,26 @@ function ClickObject(objectName)
   {
     if(objectName.WaitProperty("Enabled", true, 5000))
     {
-      Log.Checkpoint("Clicking on element " + objectName)
+      Log.Checkpoint("Clicking on element " + objectName);
       objectName.Click();
     }
     else
     {
-      Log.Error("Element " + objectName + " is not clickable.")
+      Log.Error("Element " + objectName + " is not clickable.");
     }
   }
   else
   {
-    Log.Error("Eleemnt " + objectName + " does not exist")
+    Log.Error("Eleemnt " + objectName + " does not exist");
+  }
+}
+
+function hoverObject(objectName)
+{
+  if(objectName.WaitProperty("Exists", true, 10000))
+  {
+    Log.Checkpoint("Hovering" + objectName + "Object");
+    objectName.HoverMouse();
   }
 }
 

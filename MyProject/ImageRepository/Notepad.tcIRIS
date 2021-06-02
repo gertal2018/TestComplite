@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{302E54A8-7D5B-4593-9563-357C2734256B}" version="1400" key="{22952D7F-AB40-4009-9B86-F2C6DB39054C}" typeId="{302E54A8-7D5B-4593-9563-357C2734256B}">
+	<config nodeName="Notepad" />
+	<testData />
+	<data>
+		<item caption="HelpButton" moniker="{F9DA2484-7269-4237-83E4-BBB8A7F0EE3F}" isComposite="False" simpleMode="True" currentImageIndex="1">
+			<image imageFileName="Data\HelpButton.png" initialHash="5B67DCCE" selectionLeft="404" selectionTop="202" selectionWidth="33" selectionHeight="20" initialLeft="404" initialTop="202" initialWidth="33" initialHeight="20" pixelTolerance="0" colorTolerance="0" deviceName="" />
+			<image imageFileName="Data\HelpButton_1.png" initialHash="00000000" selectionLeft="446" selectionTop="100" selectionWidth="39" selectionHeight="19" initialLeft="446" initialTop="100" initialWidth="39" initialHeight="19" pixelTolerance="0" colorTolerance="0" deviceName="Hovered Help Button" />
+		</item>
+	</data>
+</Root>

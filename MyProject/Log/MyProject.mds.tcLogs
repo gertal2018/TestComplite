@@ -111,6 +111,150 @@
 				<Prp name="relpath" type="S" value="2_22_2021_4_28 AM_43_718\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.125463912"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{DF1245C5-8295-4073-A713-F13A9F961310}"/>
+				<Prp name="nameofroot" type="S" value="Click Help button img"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_00 AM_40_82\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1260353241"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{895F95BB-2BE8-4A99-9B54-D8547C97AF78}"/>
+				<Prp name="nameofroot" type="S" value="Click Help button img"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_01 AM_29_452\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0012">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1262001389"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4212BB7E-BB14-4A53-BC5F-D753815B7524}"/>
+				<Prp name="nameofroot" type="S" value="Click Help button img"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_01 AM_43_692\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0013">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1346120602"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{9FB53AE3-4A5C-4E01-8B49-9BAEC9AA7F74}"/>
+				<Prp name="nameofroot" type="S" value="Click Help button area"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_13 AM_50_482\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0014">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1458309722"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{82437E54-6B2B-48DB-9DBF-719A9596DFB4}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_29 AM_59_796\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0015">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1461537731"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{AC74D089-504E-427B-B93E-110E331FFE6C}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_30 AM_27_686\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0016">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1465682407"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4E4E4958-3579-48CC-80E1-CB276C8DA2AF}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_31 AM_03_496\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0017">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1470103704"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{03F94589-FA34-473C-9FED-E25A73E055FB}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_31 AM_41_696\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0018">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1475603704"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{DD16D779-5964-44D1-9D04-961681993B1C}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_32 AM_29_216\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0019">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1477309722"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{49C1BCE6-87E7-45E4-A914-B76F6E8BF817}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_32 AM_43_956\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0020">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1483099074"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{589B3C45-2161-4327-9AA0-87542467E7C9}"/>
+				<Prp name="nameofroot" type="S" value="Click Help button img"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_33 AM_33_976\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0021">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1483797106"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{FE96D366-ACC7-45FC-AF4F-6DAF0B8F2A6F}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_33 AM_40_7\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0022">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1484903472"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{99275C91-AEE4-4B9B-A0A4-4EA9839AA091}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_33 AM_49_566\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0023">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1503963657"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B05864F3-1102-49B7-9753-BB134F8DD058}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_36 AM_34_246\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0024">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1505899884"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BF1BEFEB-ED5D-488D-AD5E-1A040C1168AF}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_36 AM_50_975\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0025">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44303.1512379167"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D19E25C3-80F1-47D4-90C8-58CA45BCB40D}"/>
+				<Prp name="nameofroot" type="S" value="Notepad Image Recognition"/>
+				<Prp name="relpath" type="S" value="4_17_2021_3_37 AM_46_956\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>

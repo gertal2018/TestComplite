@@ -7,6 +7,8 @@
   
   // Notepad Name Mapping:
   notepadMainWindow : Aliases.notepad.wndNotepad,
+  notepadTextBox : Aliases.notepad.wndNotepad.TextBox,
+  notepadHelpButton : Aliases.notepad.wndNotepad.menubar.btnHelp,
   
   // Notepad ++
   nppMainWindow : Aliases.notepadPlusPlus.MainWindow,

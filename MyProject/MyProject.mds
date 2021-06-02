@@ -5,6 +5,7 @@
 		<child name="KeywordTests" key="{8BF76BDF-FD53-464A-BD98-B8B09DB871FE}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
 		<child name="TestedApps" key="{2887F78D-777F-4EDF-8622-8C916893014C}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="" path="TestedApps\TestedApps.tcTAs" />
 		<child name="NameMapping" key="{2497955F-6AE5-4F49-BA25-35299475D2A5}" type="Name Mapping" typeId="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" pluginName="NameMapping" path="NameMapping\NameMapping.tcNM" />
+		<child name="ImageRepository" key="{0B3ED664-E3C0-476D-89AC-F5A826B44237}" type="Image Repository" typeId="{E7C36009-4A66-4899-99AE-DEFC5C22C057}" pluginName="" path="ImageRepository\ImageRepository.tcIR" />
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{97A9CC2E-42E7-4F7F-A2E6-B1CAD408B4C7}" version="14">
@@ -242,6 +243,26 @@
 						<testParameters>
 							<param0 name="strKola" type="3" localVarName="" varType="8" value="Toyota,Nissan,Honda,Mazda" />
 						</testParameters>
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="Notepad Image Recognition" key="{3D44AF3D-30E0-4785-B840-45A071E4B668}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="Hover Help button" key="{C1C953E0-ED81-43E8-9D16-021330D70BC2}" group="False" enabled="True" testMoniker="{E22B6C7B-F487-480E-B08B-F63C0894BFD5}HoverHelpButton" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="Click Help button img" key="{E75F16E8-0F86-43E0-AB0E-E8C276AE4C3C}" group="False" enabled="True" testMoniker="{E22B6C7B-F487-480E-B08B-F63C0894BFD5}clickImage" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters>
+							<param0 name="stringImageSet" type="3" localVarName="" varType="8" value="Notepad" />
+							<param1 name="stringImageName" type="3" localVarName="" varType="8" value="HelpButton" />
+						</testParameters>
+						<children />
+					</testItem>
+					<testItem name="Click Help button area" key="{995408C6-2CF2-47F8-B02C-1D333A247F0B}" group="False" enabled="False" testMoniker="{E22B6C7B-F487-480E-B08B-F63C0894BFD5}clickHelpButtonInNotepad" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
 						<children />
 					</testItem>
 				</children>
